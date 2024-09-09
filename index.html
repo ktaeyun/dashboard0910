@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!-- 대시보드 제목 추가 -->
+<div style="margin-top: 100px;">
+    <h2 style="margin-left: 10px;">학사행정 대시보드</h2> <!-- 대시보드 제목 -->
+    <div id="tableau-container" style="width: 100%; height: 600px;"></div>
+</div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴 UI</title>
+
+    <!-- 나눔고딕 폰트 불러오기 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap">
+
+    <!-- 외부 CSS 파일 링크 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 태블로 JavaScript API 로드 -->
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.8.0.min.js"></script>
+</head>
+<body>
+
+<nav>
+    <!-- 인천대학교 로고 이미지 추가 -->
+    <img src="INU_symbol.png" alt="인천대학교 로고">
+    <ul>
+        <!-- 메뉴 항목들 -->
+        <li class="dropdown">
+            <a href="#admission">입학</a>
+            <div class="dropdown-content">
+                <a href="#freshmen-enrollment">신입생 충원</a>
+                <a href="#freshmen-achievement">신입생 학업 성취도</a>
+            </div>
+        </li>
+        <!-- 추가적인 메뉴 항목들 -->
+        <li class="dropdown">
+            <a href="#academic">학적</a>
+            <div class="dropdown-content">
+                <a href="#reinstatement">휴/복학</a>
+                <a href="#withdrawal">자퇴</a>
+                <a href="#transfers">전과</a>
+                <a href="#second-major">제2전공</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#grades">성적</a>
+            <div class="dropdown-content">
+                <a href="#credit-hours">이수학점</a>
+                <a href="#grades">학점</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#graduation">졸업</a>
+            <div class="dropdown-content">
+                <a href="#graduation">졸업</a>
+                <a href="#graduation-extension">졸업 유예</a>
+                <a href="#graduate-school">대학원</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#etc">기타</a>
+            <div class="dropdown-content">
+                <a href="#faculty">교원</a>
+                <a href="#assistants">조교</a>
+                <a href="#student-satisfaction">학생만족도</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<!-- 태블로 퍼블릭 대시보드 인베드 -->
+
+
+
+
+<!-- 자바스크립트 코드 -->
+<script src="script.js"></script>
+
+</body>
+</html>
