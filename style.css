@@ -76,3 +76,25 @@ nav ul li a {
     font-family: 'Nanum Gothic', sans-serif;
     text-align: center; /* 제목 중앙 정렬 */
 }
+
+/* 2차 드롭다운 스타일 */
+.dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%; /* 부모 드롭다운의 오른쪽에 표시 */
+    top: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+/* 휴/복학에 마우스를 올렸을 때 2차 드롭다운 표시 */
+.dropdown-content a:hover + .dropdown-submenu {
+    display: block;
+}
+
+/* 2차 드롭다운 메뉴에 호버할 때도 유지 */
+.dropdown-submenu:hover {
+    display: block;
+}
